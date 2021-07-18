@@ -23,7 +23,7 @@ public class gapfulNumber {
 		if(gapfulNumber(firstNumber, lastNumber, orjNumber))
 				System.out.println("Gapful number");
 		else
-		System.out.println("Is not Gapful number");		
+		System.out.println("Not a Gapful number");		
 	}	
 public static boolean gapfulNumber(int firstNumber,int lastNumber,int number) {
 	int value=firstNumber* 10 + lastNumber;
