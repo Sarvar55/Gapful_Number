@@ -21,7 +21,7 @@ public class gapfulNumber {
 			}
 		}while(number!=0);
 		if(gapfulNumber(firstNumber, lastNumber, orjNumber))
-				System.out.println("Gapful number");
+		System.out.println("Gapful number");
 		else
 		System.out.println("Not a Gapful number");		
 	}	
