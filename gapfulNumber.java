@@ -20,6 +20,7 @@ public class gapfulNumber {
 				firstNumber=temp;
 			}
 		}while(number!=0);
+		
 		if(gapfulNumber(firstNumber, lastNumber, orjNumber))
 		System.out.println("Gapful number");
 		else
