@@ -4,10 +4,14 @@ public class gapfulNumber {
 
 	public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
+		System.out.print("Place enter any number:");
 		int number=scn.nextInt();
-		numberOfDigit(number);
+		if(numberOfDigit(number))
+		    System.out.println("Gapful number");
+		else
+		    System.out.println("Is not Gapful number");		
 	}
-	public  static void numberOfDigit(int number) {
+	public  static boolean numberOfDigit(int number) {
 		int count=0, firstNumber = 0,lastNumber=0,orjNumber=number;
 		do {
 			int temp=number%10;
@@ -20,11 +24,11 @@ public class gapfulNumber {
 				firstNumber=temp;
 			}
 		}while(number!=0);
-		
 		if(gapfulNumber(firstNumber, lastNumber, orjNumber))
-		System.out.println("Gapful number");
+		    return true;
 		else
-		System.out.println("Not a Gapful number");		
+		   return false;
+		
 	}	
 public static boolean gapfulNumber(int firstNumber,int lastNumber,int number) {
 	int value=firstNumber* 10 + lastNumber;
