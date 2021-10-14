@@ -7,7 +7,7 @@ public class gapfulNumber {
          System.out.println("Place Enter any number:");
          int number = scn.nextInt();
          if(gapfulNumber(firstNumber(number), lastNumber(number), number)) 
-        	 System.out.print("Gapful Number");
+            System.out.print("Gapful Number");
          else 
             System.out.print("Is not Gapful Number"); 
 	
